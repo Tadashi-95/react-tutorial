@@ -15,6 +15,8 @@ https://ja.react.dev/learn/tutorial-tic-tac-toe
   - [チュートリアルのセットアップ](https://ja.react.dev/learn/tutorial-tic-tac-toe#setup-for-the-tutorial) までできた
 - Day 2 
   - [概要](https://ja.react.dev/learn/tutorial-tic-tac-toe#overview)を一通り進めた！
-  - 次は[ゲームを完成させる](https://ja.react.dev/learn/tutorial-tic-tac-toe#completing-the-game)
+  - [ゲームを完成させる](https://ja.react.dev/learn/tutorial-tic-tac-toe#completing-the-game) の 下記箇所まで進めた
+    - https://ja.react.dev/learn/tutorial-tic-tac-toe#completing-the-game:~:text=%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AF%E3%80%81%E4%BB%A5%E4%B8%8B%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%AF%E3%81%9A%E3%81%A7%E3%81%99%EF%BC%9A
 - Day 3 ---
+- Day 4 ---
 - ...
