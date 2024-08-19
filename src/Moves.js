@@ -1,6 +1,3 @@
-// TODO : 途中の状態！ Moves 内で 親である Game の currentMove state を変更できるようにしないといけない。
-// 「react 子コンポーネントでset」で検索
-
 export default function Moves({history, setCurrentMove}) {
     function jumpTo(nextMove) {
         setCurrentMove(nextMove);
