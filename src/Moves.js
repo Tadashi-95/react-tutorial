@@ -19,6 +19,6 @@ export default function Moves({history, setCurrentMove}) {
     });
 
     return (
-        <ol>{moves}</ol>
+        <ul className="moves-history">{moves}</ul>
     );
 }

@@ -88,4 +88,8 @@
   .game-info {
     margin-left: 20px;
   }
+
+  .moves-history {
+    list-style: none;
+  }
   
