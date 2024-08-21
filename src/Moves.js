@@ -1,4 +1,30 @@
+import { useState } from "react" ;
+
+const useToggle = () => {
+    const [state, setState] = useState(false);
+    const toggle =  () => setState(!state); 
+
+    return [state, toggle];
+}
+
+function ToggleButton ({isAscending, toggleIsAscending}) {
+    let sortOrderDescription;
+    if (isAscending) {
+        sortOrderDescription = "Ascending order";
+    } else {
+        sortOrderDescription = "Descending order";
+    }
+
+    return (
+        <div>
+          <button onClick={toggleIsAscending}>{sortOrderDescription}</button>
+        </div>
+    );
+}
+
 export default function Moves({history, currentMove, setCurrentMove}) {
+    const [isAscending, toggleIsAscending] = useToggle();
+
     function jumpTo(nextMove) {
         setCurrentMove(nextMove);
     }
@@ -11,7 +37,7 @@ export default function Moves({history, currentMove, setCurrentMove}) {
             description = 'You are at move #' + move;
         } else {
             description = 'Go to move #' + move;
-        }
+        }   
 
         return (
             <li key={move} start="0">
@@ -20,7 +46,14 @@ export default function Moves({history, currentMove, setCurrentMove}) {
         );
     });
 
+    if (!isAscending) {
+        moves.reverse();
+    }
+
     return (
-        <ul className="moves-history">{moves}</ul>
+        <>
+            <ToggleButton isAscending={isAscending} toggleIsAscending={toggleIsAscending} />
+            <ul className="moves-history">{moves}</ul>
+        </>
     );
 }
